@@ -2,6 +2,9 @@
 name = "noir"
 type = "bin"
 authors = [""]
-compiler_version = ">=0.26.0"
+compiler_version = ">=0.18.0"
 
 [dependencies]
+hash_to_curve = { tag = "v0.1.1", git = "https://github.com/skaunov/hash_to_curve" }
+curves = { tag = "v0.2.0", git = "https://github.com/shuklaayush/noir-bigint", directory="crates/curves" }
+biguint = { tag = "v0.2.0", git = "https://github.com/shuklaayush/noir-bigint", directory="crates/biguint" }
